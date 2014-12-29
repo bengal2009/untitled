@@ -30,7 +30,7 @@ public class Main {
 //        a2.fileread();
 //MSDB a1=new MSDB();
 //        a1.ConDb1();
-        dispmsg("1234555!");
+
         dispmsg("555666!");
         dispmsg("Good!");
         dispmsg("Done!");
