@@ -30,7 +30,8 @@ public class Main {
 //        a2.fileread();
 //MSDB a1=new MSDB();
 //        a1.ConDb1();
-
+int i=0;
+        for(i=0;i<10;i++)
         dispmsg("555666!");
         dispmsg("Good!");
         dispmsg("Done!");
