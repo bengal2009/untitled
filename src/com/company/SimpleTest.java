@@ -8,7 +8,7 @@ public class SimpleTest {
             System.out.println("1122233111");
 
 
-
+        System.getProperties().list(System.out);
 
     }
 }
