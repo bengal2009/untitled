@@ -5,7 +5,7 @@ package com.company;
  */
 public class SimpleTest {
     public static void main(String[] args){
-            System.out.println("11222111");
+            System.out.println("1122233111");
 
 
 
