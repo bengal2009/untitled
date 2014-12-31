@@ -22,6 +22,7 @@ public class SimpleTest {
         }
     }
 
+
     public static void main(String[] args) throws IOException  {
        SortTest();
       /*  int[] a1=new int[5];
