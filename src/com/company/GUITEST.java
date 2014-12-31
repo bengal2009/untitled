@@ -12,6 +12,7 @@ public class GUITEST {
     private JButton button1;
     private JButton button2;
     private JLabel label1;
+    private JButton button3;
 
 
     public GUITEST() {
