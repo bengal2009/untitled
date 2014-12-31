@@ -15,10 +15,19 @@ public class SimpleTest {
         for(int i=0;i<a1.length;i++) {
             System.out.println("Keyin..");
             System.out.println(12);
-            a1[i]=Integer.parseInt(keyin.readLine());
+            try {
+
+                a1[i]=Integer.parseInt(keyin.readLine());
+            }
+            catch (Exception E){
+                System.out.println(E.toString());
+
+            }
         }
         System.out.println("Hello");
-       /* int i;
+
+
+           /* int i;
         ArrayList a1=new ArrayList();
 
         a1.add(new Integer(1));
