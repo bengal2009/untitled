@@ -1,8 +1,5 @@
 import javax.swing.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
-import java.awt.event.KeyAdapter;
-import java.awt.event.KeyEvent;
+import java.awt.event.*;
 
 /**
  * Created by blin on 2015/1/4.
@@ -15,6 +12,7 @@ public class GUI2 {
     private JButton SendBut;
     private JTextField tx1;
     private JLabel label1;
+    private JLabel lb2;
 
     private void createUIComponents() {
         // TODO: place custom component creation code here
@@ -26,7 +24,7 @@ public class GUI2 {
 
     public GUI2() {
 
-            label1.setIcon(new ImageIcon("c:\\email.png"));
+
         SendBut.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -62,18 +60,38 @@ public class GUI2 {
             }
         });
 
+        panel1.addMouseListener(new MouseAdapter() {
+        });
+        label1.addMouseListener(new MouseAdapter() {
+            /**
+             * {@inheritDoc}
+             *
+             * @param e
+             */
+            @Override
+            public void mouseClicked(MouseEvent e) {
+                super.mouseClicked(e);
+//                System.out.println(e.getSource().toString());
+                System.out.println(label1.getX());
+            }
+        });
     }
+
+
 
     public static void main(String[] args) {
 
 
         JFrame frame = new JFrame("This is a Test");
+
         frame.setLocation(100, 100);
         frame.setSize(400, 400);
         frame.setContentPane(new GUI2().panel1);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.pack();
+        frame.setLayout(null);
         frame.setVisible(true);
+
 
     }
 
