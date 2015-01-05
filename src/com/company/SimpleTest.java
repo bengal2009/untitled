@@ -3,6 +3,7 @@ package com.company;
 import sun.misc.Sort;
 
 import java.lang.reflect.Array;
+import java.security.KeyException;
 import java.util.ArrayList;
 import java.io.*;
 import java.util.*;
@@ -21,10 +22,41 @@ public class SimpleTest {
             System.out.println(a1[i]);
         }
     }
+    public static void InputTest() throws IOException{
+        String a1;
+        BufferedReader keyin = new BufferedReader(
+                new InputStreamReader(System.in));
 
+        Calendar now = Calendar.getInstance();
+        System.out.println(now.getTime());
+
+
+
+        do {
+
+            System.out.println("1:11111");
+            System.out.println("2:21111");
+            System.out.println("3:Exit");
+            System.out.println("Please input choose:");
+            a1=keyin.readLine();
+            switch (Integer.parseInt(a1)){
+                case 1:
+                    System.out.println("You select 1");
+                    break;
+                case 2:
+                    System.out.println("You select 2");
+                    break;
+                case 3:
+                    System.out.println("You select 3");
+                    break;
+            }
+        }while (Integer.parseInt(a1)!=3);
+        System.out.println("Over!");
+    }
 
     public static void main(String[] args) throws IOException  {
-       SortTest();
+//       SortTest();
+        InputTest();
       /*  int[] a1=new int[5];
         BufferedReader keyin = new BufferedReader(
                 new InputStreamReader(System.in));
