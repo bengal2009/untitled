@@ -11,7 +11,7 @@ public class GUITEST {
     private JPanel Panel1;
     private JButton button1;
     private JButton test5Button;
-    private JLabel label1;
+    public JLabel label1;
     private JButton button3;
     private JRadioButton radioButton1;
     private JCheckBox checkBox1;
