@@ -74,6 +74,6 @@ public class ReadCfg {
         GetPropertyValues t1=new  GetPropertyValues();
         SetProp t2=new SetProp();
         t1.getPropValues();
-        t2.setPropValues();
+//        t2.setPropValues();
     }
 }
