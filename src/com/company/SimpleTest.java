@@ -1,6 +1,5 @@
 package com.company;
 
-import sun.misc.Sort;
 
 import java.lang.reflect.Array;
 import java.security.KeyException;
@@ -54,8 +53,15 @@ public class SimpleTest {
         System.out.println("Over!");
     }
 
+    public static long getPID() {
+        String processName =
+                java.lang.management.ManagementFactory.getRuntimeMXBean().getName();
+        return Long.parseLong(processName.split("@")[0]);
+    }
+
     public static void main(String[] args) throws IOException  {
 //       SortTest();
+        System.out.println("My PID is " + getPID());
         InputTest();
       /*  int[] a1=new int[5];
         BufferedReader keyin = new BufferedReader(
