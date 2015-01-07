@@ -33,7 +33,7 @@ public class SimpleTest {
 
         do {
 
-            System.out.println("1:11111");
+            System.out.println("1:System Properties");
             System.out.println("2:21111");
             System.out.println("3:Exit");
             System.out.println("Please input choose:");
@@ -41,6 +41,7 @@ public class SimpleTest {
             switch (Integer.parseInt(a1)){
                 case 1:
                     System.out.println("You select 1");
+                    System.getProperties().list(System.out);
                     break;
                 case 2:
                     System.out.println("You select 2");
