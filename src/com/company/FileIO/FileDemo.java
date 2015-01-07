@@ -1,4 +1,4 @@
-package com.company;
+package com.company.FileIO;
 import java.io.*;
 /**
  * Created by blin on 2015/1/7.
