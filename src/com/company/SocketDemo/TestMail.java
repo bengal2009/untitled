@@ -5,10 +5,10 @@ package com.company.SocketDemo;
  */
 public class TestMail {
     public static void main(String[] args){
-        String smtp = "192.168.91.3";
-        String from = "blin@csavagencies-china.com";
+        String smtp = "localhost";
+        String from = "XXXX";
         //String to = "lizhuoran@staff.cntv.cn,robinpipi@126.com";
-        String to="blin@csavagencies-china.com";
+        String to="XXX";
         //String copyto = "lidudu2009@sina.com,robinzhang521@sina.com";
         String copyto =null;
         String subject = "邮件主题2";
