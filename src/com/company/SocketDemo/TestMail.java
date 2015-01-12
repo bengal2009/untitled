@@ -1,6 +1,7 @@
 package com.company.SocketDemo;
 
 /**
+ *
  * Created by blin on 2015/1/9.
  */
 public class TestMail {
